@@ -24,11 +24,13 @@
 ###### Benchmark
 ###### Speedtest much complex and additionaly work with upload test
 ```
+go test -bench=.
 goos: linux
 goarch: amd64
-BenchmarkFast-4                1        2014476139 ns/op
-Download: 7.17 Mbps, Upload: 0.00 Mbps
-BenchmarkSpeedtest-4           1        41369347497 ns/op
-Download: 292.06 Mbps, Upload: 16.00 Mbps
+pkg: github.com/StanislavKH/sptest
+BenchmarkFast-4                1        1814710986 ns/op         8065808 B/op     162626 allocs/op
+BenchmarkSpeedtest-4           1        41377012898 ns/op        4289560 B/op      17733 allocs/op
+PASS
+ok      github.com/StanislavKH/sptest   43.206s
 ```
 
